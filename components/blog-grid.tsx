@@ -11,7 +11,7 @@ const blogPosts = [
     title: "Building Modern React Applications with Next.js 14",
     summary:
       "Explore the latest features in Next.js 14 and learn how to build performant, scalable React applications with the App Router.",
-    image: "/blog-nextjs-14.png",
+    image: "/blog-nextjs-14.jpeg",
     category: "Next.js",
     tags: ["React", "Next.js", "Performance"],
     date: "2024-01-15",
@@ -23,7 +23,7 @@ const blogPosts = [
     title: "TypeScript Best Practices for Large-Scale Applications",
     summary:
       "Learn essential TypeScript patterns and practices that will help you maintain clean, scalable codebases in enterprise applications.",
-    image: "/blog-typescript-best-practices.png",
+    image: "/blog-typescript-best-practices.jpeg",
     category: "TypeScript",
     tags: ["TypeScript", "Best Practices", "Architecture"],
     date: "2024-01-10",
@@ -47,7 +47,7 @@ const blogPosts = [
     title: "Optimizing React Performance: A Complete Guide",
     summary:
       "Discover advanced techniques for optimizing React applications, from code splitting to memoization and beyond.",
-    image: "/blog-react-performance.png",
+    image: "/blog-react-performance.jpeg",
     category: "Performance",
     tags: ["React", "Performance", "Optimization"],
     date: "2023-12-28",
@@ -59,7 +59,7 @@ const blogPosts = [
     title: "The Future of Web Development: Trends for 2024",
     summary:
       "Explore the emerging trends and technologies that are shaping the future of web development in 2024 and beyond.",
-    image: "/blog-web-dev-trends-2024.png",
+    image: "/blog-web-dev-trends-2025.jpeg",
     category: "Insights",
     tags: ["Trends", "Web Development", "Future"],
     date: "2023-12-20",
@@ -71,7 +71,7 @@ const blogPosts = [
     title: "Building Accessible Web Applications",
     summary:
       "Learn how to create inclusive web experiences that work for everyone, with practical accessibility guidelines and techniques.",
-    image: "/blog-accessibility.png",
+    image: "/blog-accessibility.jpeg",
     category: "Best Practices",
     tags: ["Accessibility", "UX", "Best Practices"],
     date: "2023-12-15",
@@ -149,7 +149,7 @@ export function BlogGrid() {
                   )}
                 </div>
 
-                <Button asChild variant="ghost" className="w-full justify-between group/btn p-0 h-auto">
+                {/* <Button asChild variant="ghost" className="w-full justify-between group/btn p-0 h-auto">
                   <Link
                     href={`/blog/${post.slug}`}
                     className="flex items-center justify-between w-full p-3 hover:bg-muted/50 rounded-lg transition-colors"
@@ -157,7 +157,23 @@ export function BlogGrid() {
                     <span className="font-medium">Read More</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
+                </Button> */}
+
+                <Button
+                  asChild
+                  variant="ghost"
+                  className="w-full justify-between p-0  h-auto rounded-lg overflow-hidden group/btn"
+                >
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="flex items-center justify-between w-full p-3 rounded-lg transition-colors hover:bg-muted/50"
+                  >
+                    <span className="font-medium text-foreground">Read More</span>
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </Button>
+
+
               </div>
             </article>
           ))}

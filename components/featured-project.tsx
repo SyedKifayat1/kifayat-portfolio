@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Calendar, Users } from "lucide-react"
+import { ExternalLink, Github, Lock, Calendar, Users } from "lucide-react"
 import Image from "next/image"
 
 export function FeaturedProject() {
@@ -22,7 +22,7 @@ export function FeaturedProject() {
             {/* Project Image */}
             <div className="relative h-64 lg:h-auto overflow-hidden">
               <Image
-                src="/featured-project-screenshot.png"
+                src="/whatsAppClone.png"
                 alt="Featured Project Screenshot"
                 width={600}
                 height={400}
@@ -37,7 +37,7 @@ export function FeaturedProject() {
                 <div className="flex items-center gap-4 mb-4">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Calendar className="h-4 w-4" />
-                    <span>2024</span>
+                    <span>2025</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Users className="h-4 w-4" />
@@ -45,16 +45,14 @@ export function FeaturedProject() {
                   </div>
                 </div>
 
-                <h3 className="font-serif font-bold text-2xl lg:text-3xl text-foreground mb-4">E-Commerce Platform</h3>
+                <h3 className="font-serif font-bold text-2xl lg:text-3xl text-foreground mb-4">Real Time Chat App</h3>
 
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  A modern, full-stack e-commerce platform built with Next.js, featuring real-time inventory management,
-                  secure payment processing, and an intuitive admin dashboard. Includes advanced features like
-                  AI-powered product recommendations and dynamic pricing.
+                  A real-time one-to-one chat application built with the MERN stack and Socket.IO, featuring instant message delivery, online/offline presence, typing indicators, and secure message storage with MongoDB. Designed with a clean and responsive interface for seamless communication across devices.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Stripe", "Vercel"].map((tech) => (
+                  {["React.js", "JavaScript", "Tailwind CSS", "Node JS","Express JS","Zustand","Socket IO", "Mongo DB", "Vercel"].map((tech) => (
                     <span key={tech} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
                       {tech}
                     </span>
@@ -67,10 +65,19 @@ export function FeaturedProject() {
                   <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   Live Demo
                 </Button>
-                <Button variant="outline" className="glow-effect bg-transparent group flex-1">
+                {/* <Button variant="outline" className="glow-effect bg-transparent group flex-1">
                   <Github className="mr-2 h-4 w-4 transition-transform group-hover:rotate-12" />
                   Source Code
+                </Button> */}
+                <Button
+                  variant="outline"
+                  className="glow-effect bg-transparent group flex-1"
+                >
+                  <Github className="mr-2 h-4 w-4 transition-transform group-hover:rotate-12" />
+                  <Lock className="mr-2 h-4 w-4 text-gray-500" />
+                  Private Repo
                 </Button>
+
               </div>
             </div>
           </div>

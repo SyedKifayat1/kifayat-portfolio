@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Code, Palette, Zap } from "lucide-react"
 import Link from "next/link"
@@ -25,14 +25,28 @@ function Hero3D() {
         const speed = (index + 1) * 0.5
         const x = xPercent * speed * 10
         const y = yPercent * speed * 10
-        ;(element as HTMLElement).style.transform =
-          `translate3d(${x}px, ${y}px, 0) rotateX(${yPercent * 5}deg) rotateY(${xPercent * 5}deg)`
+          ; (element as HTMLElement).style.transform =
+            `translate3d(${x}px, ${y}px, 0) rotateX(${yPercent * 5}deg) rotateY(${xPercent * 5}deg)`
       })
     }
 
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
+
+
+  const [particles, setParticles] = useState<{ left: string, top: string, delay: string, duration: string }[]>([]);
+
+  useEffect(() => {
+    const newParticles = Array.from({ length: 50 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${Math.random() * 3}s`,
+      duration: `${2 + Math.random() * 2}s`,
+    }));
+    setParticles(newParticles);
+  }, []);
+
 
   return (
     <section ref={heroRef} className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -78,20 +92,23 @@ function Hero3D() {
       </div>
 
       {/* Particle effect overlay */}
-      <div className="absolute inset-0 opacity-20">
-        {Array.from({ length: 50 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-primary rounded-full animate-twinkle"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`,
-            }}
-          />
-        ))}
-      </div>
+      
+        <div className="absolute inset-0 opacity-20">
+          {particles.map((p, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-primary rounded-full animate-twinkle"
+              style={{
+                left: p.left,
+                top: p.top,
+                animationDelay: p.delay,
+                animationDuration: p.duration,
+              }}
+            />
+          ))}
+        </div>
+
+
 
       {/* Main content with 3D transforms */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto transform-3d">
@@ -103,17 +120,17 @@ function Hero3D() {
         </div>
 
         <h1 className="font-serif font-bold text-4xl sm:text-6xl lg:text-7xl text-foreground mb-6 leading-tight transform hover:scale-105 transition-transform duration-300">
-          <span className="inline-block transform hover:rotate-2 transition-transform duration-300">Modern</span>{" "}
+          <span className="inline-block transform hover:rotate-2 transition-transform duration-300">Kifayat</span>{" "}
           <span className="text-primary inline-block transform hover:-rotate-1 transition-transform duration-300 relative">
-            3D Portfolio
+            Web Developer
             <div className="absolute inset-0 bg-primary/10 blur-2xl rounded-full scale-150 animate-pulse"></div>
           </span>
           <br />
-          <span className="inline-block transform hover:rotate-1 transition-transform duration-300">Experience</span>
+          <span className="inline-block transform hover:rotate-1 transition-transform duration-300">Portfolio</span>
         </h1>
 
         <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed transform hover:scale-105 transition-transform duration-300">
-          Showcasing skills, projects, and services with cutting-edge animations and interactive 3D elements.
+          Crafting modern and responsive websites with React.js, animations, and interactive experiences.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

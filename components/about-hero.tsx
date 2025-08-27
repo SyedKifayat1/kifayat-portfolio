@@ -16,7 +16,7 @@ export function AboutHero() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 animate-spin-slow"></div>
               <div className="absolute inset-2 rounded-full bg-gradient-to-br from-background to-muted overflow-hidden">
                 <Image
-                  src="/professional-headshot.png"
+                  src="/SyedKifayat.png"
                   alt="Profile"
                   width={300}
                   height={300}
@@ -35,35 +35,42 @@ export function AboutHero() {
           <div className="space-y-6">
             <div>
               <h1 className="font-serif font-bold text-4xl sm:text-5xl text-foreground mb-4">
-                About <span className="text-primary">Me</span>
+                Syed <span className="text-primary">Kifayat Ur Rahman</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Passionate full-stack developer with a love for creating beautiful, functional, and user-centered
-                digital experiences.
+                MERN Stack Developer & Computer Engineering Student at ITU. I build responsive, user-friendly, and
+                high-performance web applications with a focus on client satisfaction and clean code.
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>Lahore, Pakistan</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Calendar className="h-5 w-5 text-primary" />
-                <span>5+ Years Experience</span>
+                <span>BS Computer Engineering (2022 - 2026)</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>hello@portfolio.dev</span>
+                <span>kifayatkhanofficial@gmail.com</span>
               </div>
+
             </div>
 
             <div className="pt-4">
-              <Button className="glow-effect group transform hover:scale-105 transition-all duration-300">
-                <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
-                Download Resume
-              </Button>
+              <a
+                href="/SyedKifayatCV.pdf"
+                download="SyedKifayatCV.pdf"
+              >
+                <Button className="glow-effect group transform hover:scale-105 transition-all duration-300">
+                  <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+                  Download Resume
+                </Button>
+              </a>
             </div>
+
           </div>
         </div>
 
@@ -73,21 +80,26 @@ export function AboutHero() {
             <h2 className="font-serif font-semibold text-2xl text-foreground mb-6">My Journey</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
               <p className="mb-4">
-                I'm a passionate full-stack developer with over 5 years of experience creating digital solutions that
-                make a difference. My journey began with a curiosity about how things work on the web, which quickly
-                evolved into a deep love for crafting beautiful, functional applications.
+                I’m a Computer Engineering undergraduate at Information Technology University, specializing in MERN
+                stack web development. My focus is on building responsive, scalable, and user-friendly applications
+                with clean code and modern UI.
               </p>
               <p className="mb-4">
-                I specialize in modern web technologies including React, Next.js, TypeScript, and Node.js. My approach
-                combines technical expertise with a keen eye for design, ensuring that every project not only functions
-                flawlessly but also provides an exceptional user experience.
+                Skilled in React.js, Next.js, Node.js, Redux, and JavaScript, I combine technical expertise with
+                design principles to craft engaging digital experiences. I’m also familiar with Shadcn UI, Bootstrap,
+                and CSS for sleek and modern interfaces.
+              </p>
+              <p className="mb-4">
+                My approach emphasizes performance, responsiveness, and seamless user experience — ensuring every project
+                I deliver is both functional and impactful.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
-                sharing knowledge through blog posts and community talks. I believe in continuous learning and staying
-                at the forefront of web development trends.
+                Beyond coding, I’m passionate about continuous learning, exploring new technologies, and contributing
+                to impactful projects. My ultimate goal is to create solutions that not only meet client needs but also
+                deliver long-term value.
               </p>
             </div>
+
           </div>
         </div>
       </div>

@@ -3,32 +3,45 @@
 import { useState } from "react"
 import Image from "next/image"
 
+
 const skillCategories = {
+  Languages: [
+    { name: "JavaScript", level: 90, icon: "/javascript-icon.png", experience: "4+ years" },
+    { name: "C", level: 90, icon: "/c-icon.png", experience: "4+ years" },
+    { name: "Python", level: 70, icon: "/python-icon.jpeg", experience: "3+ year" },
+    { name: "C++", level: 85, icon: "/cpp-logo.png", experience: "4+ years" },
+  ],
   Frontend: [
-    { name: "React", level: 95, icon: "/react-icon.png", experience: "5+ years" },
-    { name: "Next.js", level: 90, icon: "/nextjs-icon.png", experience: "3+ years" },
-    { name: "TypeScript", level: 88, icon: "/typescript-icon.png", experience: "4+ years" },
-    { name: "Tailwind CSS", level: 92, icon: "/tailwind-icon.png", experience: "3+ years" },
-    { name: "Vue.js", level: 75, icon: "/vue-icon.png", experience: "2+ years" },
-    { name: "JavaScript", level: 95, icon: "/javascript-icon.png", experience: "6+ years" },
+    { name: "React.js", level: 90, icon: "/react-icon.png", experience: "3+ years" },
+    { name: "Next.js", level: 85, icon: "/nextjs-icon.png", experience: "3+ year" },
+    { name: "MERN Stack", level: 80, icon: "/mern-logo.jpeg", experience: "3+ year" },
+    { name: "ShadCN UI", level: 75, icon: "/shadcn-icon.png", experience: "3+ year" },
+    { name: "Material UI", level: 78, icon: "/mui-icon.png", experience: "3+ year" },
+    { name: "Tailwind CSS", level: 88, icon: "/tailwind-icon.png", experience: "3+ years" },
   ],
   Backend: [
-    { name: "Node.js", level: 85, icon: "/nodejs-icon.png", experience: "4+ years" },
-    { name: "Python", level: 80, icon: "/python-icon.png", experience: "3+ years" },
-    { name: "PostgreSQL", level: 82, icon: "/postgresql-icon.png", experience: "3+ years" },
-    { name: "MongoDB", level: 78, icon: "/mongodb-icon.png", experience: "2+ years" },
-    { name: "GraphQL", level: 75, icon: "/graphql-icon.png", experience: "2+ years" },
-    { name: "Express.js", level: 88, icon: "/express-icon.png", experience: "4+ years" },
+    { name: "Node.js", level: 80, icon: "/nodejs-icon.png", experience: "3+ year" },
+    { name: "Express.js", level: 78, icon: "/express-icon.png", experience: "3+ year" },
+    { name: "PostgreSQL", level: 75, icon: "/postgresql-icon.png", experience: "3+ year" },
+    { name: "MySQL", level: 70, icon: "/mysql-icon.png", experience: "3+ year" },
+    { name: "MongoDB", level: 72, icon: "/mongodb-icon.png", experience: "3+ year" },
   ],
   Tools: [
-    { name: "Git", level: 90, icon: "/git-icon.png", experience: "5+ years" },
-    { name: "Docker", level: 75, icon: "/docker-icon.png", experience: "2+ years" },
-    { name: "AWS", level: 70, icon: "/aws-icon.png", experience: "2+ years" },
-    { name: "Vercel", level: 85, icon: "/vercel-icon.png", experience: "3+ years" },
-    { name: "Figma", level: 80, icon: "/figma-icon.png", experience: "3+ years" },
-    { name: "VS Code", level: 95, icon: "/vscode-icon.png", experience: "5+ years" },
+    { name: "Git", level: 85, icon: "/git-icon.png", experience: "3+ years" },
+    { name: "Jira", level: 75, icon: "/jira-icon.jpeg", experience: "2+ year" },
+    { name: "ClickUp", level: 70, icon: "/clickup-icon.png", experience: "1+ year" },
+    { name: "Vercel", level: 80, icon: "/vercel-icon.png", experience: "3+ year" },
+    { name: "VS Code", level: 95, icon: "/vscode-icon.png", experience: "3+ years" },
+  ],
+  SoftSkills: [
+    { name: "Problem Solving", level: 90, icon: "/problem-solving-icon.png" },
+    { name: "Critical Thinking", level: 88, icon: "/critical-thinking-icon.png" },
+    { name: "Teamwork", level: 85, icon: "/teamwork-icon.png" },
+    { name: "Effective Communication", level: 83, icon: "/communication-icon.png" },
+    { name: "Adaptability", level: 80, icon: "/adaptability-icon.jpeg" },
   ],
 }
+
 
 export function SkillsCategories() {
   const [activeCategory, setActiveCategory] = useState("Frontend")

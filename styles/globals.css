@@ -117,7 +117,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  .swiper-wrapper {
+    align-items: stretch !important;
+  }
+
+  .swiper-slide {
+    display: flex;
+    height: auto !important;
+  }
+
 }

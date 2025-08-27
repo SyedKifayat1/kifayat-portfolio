@@ -4,9 +4,9 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
 const metrics = [
-  { label: "Projects Completed", value: 150, suffix: "+" },
+  { label: "Projects Completed", value: 50, suffix: "+" },
   { label: "Happy Clients", value: 98, suffix: "%" },
-  { label: "Years Experience", value: 5, suffix: "+" },
+  { label: "Years Experience", value: 3, suffix: "+" },
   { label: "Technologies Mastered", value: 25, suffix: "+" },
 ]
 

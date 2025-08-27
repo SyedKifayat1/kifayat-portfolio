@@ -8,10 +8,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="font-serif font-bold text-xl text-primary mb-4">Portfolio</h3>
+            <h3 className="font-serif font-bold text-xl text-primary mb-4">Syed Kifayat</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              A modern, interactive portfolio showcasing skills, projects, and services with cutting-edge 3D elements
-              and animations.
+              Showcasing projects, skills, and services with clean UI, responsive layouts, and seamless user experiences.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
@@ -81,7 +80,8 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Portfolio. All rights reserved. Built with Next.js and Tailwind CSS.
+            © 2025 Kifayat’s Portfolio. All rights reserved. Designed & Developed with Next.js and Tailwind CSS.
+
           </p>
         </div>
       </div>

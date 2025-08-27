@@ -8,7 +8,7 @@ const plans = [
   {
     name: "Basic",
     icon: Star,
-    price: "$1,500",
+    price: "$400",
     period: "one-time",
     description: "Perfect for personal portfolios and small businesses",
     features: [
@@ -24,7 +24,7 @@ const plans = [
   {
     name: "Standard",
     icon: Zap,
-    price: "$3,500",
+    price: "$600",
     period: "one-time",
     description: "Ideal for growing businesses and professional websites",
     features: [
@@ -42,7 +42,7 @@ const plans = [
   {
     name: "Premium",
     icon: Crown,
-    price: "$6,500",
+    price: "$1000",
     period: "one-time",
     description: "Complete solution for enterprises and complex applications",
     features: [

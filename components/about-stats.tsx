@@ -6,15 +6,15 @@ import { Code, Users, Award, Coffee } from "lucide-react"
 const stats = [
   {
     icon: Code,
-    value: 150,
+    value: 50,
     label: "Projects Completed",
     suffix: "+",
   },
   {
     icon: Users,
-    value: 50,
+    value: 98,
     label: "Happy Clients",
-    suffix: "+",
+    suffix: "%",
   },
   {
     icon: Award,
@@ -24,7 +24,7 @@ const stats = [
   },
   {
     icon: Coffee,
-    value: 1000,
+    value: 100,
     label: "Cups of Coffee",
     suffix: "+",
   },

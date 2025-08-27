@@ -23,6 +23,7 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
+  // Handle scroll state for navbar styling
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -30,6 +31,15 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // Lock/unlock scroll when mobile menu opens
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+  }, [isMobileMenuOpen])
 
   return (
     <nav
@@ -41,8 +51,11 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="font-serif font-bold text-xl text-primary hover:text-accent transition-colors">
-            Portfolio
+          <Link
+            href="/"
+            className="font-serif font-bold text-xl text-primary hover:text-accent transition-colors"
+          >
+            Syed Kifayat
           </Link>
 
           {/* Desktop Navigation */}
@@ -79,29 +92,37 @@ export function Navigation() {
               className="md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-md border-t border-border">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Fullscreen Navigation */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+
+          {/* Close Button */}
+          <Button
+            variant="ghost"
+            size="lg"
+            className="absolute top-4 right-4"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <X className="h-7 w-7" />
+          </Button>
+        </div>
+      )}
     </nav>
   )
 }

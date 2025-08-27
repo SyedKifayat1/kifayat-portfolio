@@ -8,73 +8,106 @@ import Image from "next/image"
 const projects = [
   {
     id: 1,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team collaboration features.",
-    image: "/project-task-management.png",
-    category: "Web Apps",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-    year: "2024",
+    title: "Real-Time One-to-One Chat App",
+    description: "A real-time one-to-one chat application built with the MERN stack and Socket.IO, featuring instant message delivery, online/offline presence, typing indicators, and secure message storage with MongoDB. Designed with a clean and responsive interface for seamless communication across devices.",
+    image: "/whatsAppClone.png",
+    category: "MERN-Stack",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO", "Tailwind CSS", "Zustand"],
+    year: "2025",
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website with 3D animations and interactive elements.",
-    image: "/project-portfolio.png",
-    category: "Websites",
-    technologies: ["Next.js", "Three.js", "Tailwind CSS", "Framer Motion"],
-    year: "2024",
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "AI Chat Website – Gemini API",
+    description: "A fully functional AI-powered chat website integrated with Google Gemini API. Real-time interactive conversations with AI, clean UI/UX, and responsive design for desktop, tablet, and mobile.",
+    image: "/project-ai-chat.png",
+    category: "Web Apps",
+    technologies: ["React.js", "Next.js", "Tailwind CSS", "Google Gemini API"],
+    year: "2025",
+    demoUrl: "https://ai-chat-boot.vercel.app/",
+    githubUrl: "https://github.com/SyedKifayat1/Ai-Chat-Boot",
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "A comprehensive weather dashboard with forecasts, maps, and historical data visualization.",
-    image: "/project-weather-dashboard.png",
-    category: "Web Apps",
-    technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-    year: "2023",
-    demoUrl: "#",
+    title: "CodeXura – Service Providing Agency Website",
+    description: "A professional agency website showcasing services in web development, AI integration, and custom software solutions. Designed as both a portfolio and service-providing platform with a modern, user-friendly layout.",
+    image: "/project-codexura.png",
+    category: "Websites",
+    technologies: ["React.js", "Tailwind CSS", "Material UI", "Framer Motion"],
+    year: "2025",
+    demoUrl: "https://codexura.netlify.app",
     githubUrl: "#",
   },
   {
     id: 4,
-    title: "Restaurant Landing Page",
-    description: "An elegant landing page for a fine dining restaurant with online reservation system.",
-    image: "/project-restaurant.png",
+    title: "Evibes Development – Digital Agency Website",
+    description: "A professional digital agency website providing web development, SEO, and marketing services. Fully responsive design, modern UI/UX, contact form integration, and SEO-friendly structure for better visibility.",
+    image: "/project-evibes.png",
     category: "Websites",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-    year: "2023",
-    demoUrl: "#",
+    technologies: ["Vite.js", "React.js", "CSS3", "Framer Motion", "Material UI"],
+    year: "2025",
+    demoUrl: "https://evibesdevelopment.com",
     githubUrl: "#",
   },
   {
     id: 5,
-    title: "Social Media Platform",
-    description: "A full-featured social media platform with posts, messaging, and user profiles.",
-    image: "/project-social-media.png",
-    category: "Full-Stack",
-    technologies: ["React", "GraphQL", "Node.js", "Redis"],
-    year: "2023",
-    demoUrl: "#",
+    title: "Social Media App Frontend",
+    description: "Frontend development for a social media application inspired by Facebook. Features user profiles, posts, likes, comments, and real-time updates with a responsive and modern design.",
+    image: "/project-social-media-frontend.png",
+    category: "Frontend",
+    technologies: ["React.js", "Next.js", "Tailwind CSS"],
+    year: "2025",
+    demoUrl: "https://facebook-clone-ten-snowy.vercel.app/",
     githubUrl: "#",
   },
   {
     id: 6,
-    title: "Mobile App UI Kit",
-    description: "A comprehensive UI kit for mobile applications with modern design components.",
-    image: "/project-ui-kit.png",
-    category: "UI",
-    technologies: ["Figma", "React Native", "Styled Components"],
-    year: "2022",
-    demoUrl: "#",
+    title: "Google Classroom Frontend – Online Learning Platform",
+    description: "Frontend development for a Google Classroom-style application. Features class dashboard, assignments, announcements, and user roles with a clean, responsive, and user-friendly interface.",
+    image: "/project-google-classroom.png",
+    category: "Frontend",
+    technologies: ["React.js", "Next.js", "Tailwind CSS", "Shadcn UI"],
+    year: "2025",
+    demoUrl: "https://google-class-room-by-kifayat.vercel.app/",
+    githubUrl: "https://github.com/SyedKifayat1/GoogleClassRoom",
+  },
+  {
+    id: 7,
+    title: "Modern Personal Portfolio Website",
+    description: "A modern personal portfolio website for showcasing skills, projects, and services. Fully responsive design, interactive UX, and SEO-optimized structure for developers, designers, and freelancers.",
+    image: "/project-portfolio-modern.png",
+    category: "Websites",
+    technologies: ["Next.js", "React.js", "Tailwind CSS", "Framer Motion", "Three.js"],
+    year: "2025",
+    demoUrl: "https://modern-portfolio-by-kifayat.vercel.app",
+    githubUrl: "https://github.com/SyedKifayat1/ModernPortfolio",
+  },
+  {
+    id: 8,
+    title: "Portfolio Website with Light & Dark Mode",
+    description: "A personal portfolio website enhanced with light and dark mode toggle. Highlights skills, projects, and services with a modern, interactive, and fully responsive design.",
+    image: "/project-portfolio-dark-light.png",
+    category: "Websites",
+    technologies: ["Next.js", "React.js", "Tailwind CSS", "Framer Motion"],
+    year: "2025",
+    demoUrl: "https://kifayat-dev.vercel.app/",
     githubUrl: "#",
   },
-]
+  {
+    id: 9,
+    title: "Vertex Studio – Digital Agency Website",
+    description: "A professional digital agency website showcasing web development, SEO, and marketing services. Modern, clean UI/UX, fully responsive, and optimized for lead generation and branding.",
+    image: "/project-vertex-studio.png",
+    category: "Websites",
+    technologies: ["React.js", "Tailwind CSS", "Material UI", "Framer Motion"],
+    year: "2025",
+    demoUrl: "https://vertexs.vercel.app/",
+    githubUrl: "#",
+  },
+];
 
-const categories = ["All", "Web Apps", "Websites", "Full-Stack", "UI"]
+const categories = ["All", "Web Apps", "Websites", "MERN-Stack"]
 
 export function ProjectsGrid() {
   const [activeCategory, setActiveCategory] = useState("All")
@@ -99,9 +132,8 @@ export function ProjectsGrid() {
                 key={category}
                 variant={activeCategory === category ? "default" : "outline"}
                 onClick={() => setActiveCategory(category)}
-                className={`glow-effect transition-all duration-300 ${
-                  activeCategory === category ? "" : "bg-transparent"
-                }`}
+                className={`glow-effect transition-all duration-300 ${activeCategory === category ? "" : "bg-transparent"
+                  }`}
               >
                 {category}
               </Button>
@@ -130,13 +162,19 @@ export function ProjectsGrid() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex gap-3">
-                    <Button size="sm" className="glow-effect">
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
-                    <Button size="sm" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20">
-                      <Github className="h-4 w-4" />
-                    </Button>
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="sm" className="glow-effect w-full">
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    </a>
+
+                    <a href={project.githubUrl} target="_blank" rel="" className="flex-1">
+                      <Button size="sm" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 w-full">
+                        <Github className="h-4 w-4" />
+                      </Button>
+                    </a>
                   </div>
+
                 </div>
               </div>
 
@@ -170,15 +208,21 @@ export function ProjectsGrid() {
                 </div>
 
                 <div className="flex gap-2">
-                  <Button size="sm" className="glow-effect flex-1 group/btn">
-                    <ExternalLink className="mr-2 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
-                    Demo
-                  </Button>
-                  <Button size="sm" variant="outline" className="glow-effect bg-transparent flex-1 group/btn">
-                    <Github className="mr-2 h-3 w-3 transition-transform group-hover/btn:rotate-12" />
-                    Code
-                  </Button>
+                  <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button size="sm" className="glow-effect flex-1 group/btn w-full">
+                      <ExternalLink className="mr-2 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
+                      Demo
+                    </Button>
+                  </a>
+
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button size="sm" variant="outline" className="glow-effect bg-transparent flex-1 group/btn w-full">
+                      <Github className="mr-2 h-3 w-3 transition-transform group-hover/btn:rotate-12" />
+                      Code
+                    </Button>
+                  </a>
                 </div>
+
               </div>
             </div>
           ))}

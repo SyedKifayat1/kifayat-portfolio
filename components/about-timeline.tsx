@@ -3,48 +3,23 @@
 import { Briefcase, GraduationCap, Calendar } from "lucide-react"
 
 const timelineItems = [
+   {
+    type: "education",
+    title: "BS in Computer Engineering",
+    company: "Information Technology University",
+    period: "Aug 2022 - Dec 2026 (Expected)",
+    description:
+      "Undergraduate student specializing in MERN stack development, front-end design, and scalable web applications. Current CGPA: 3.04.",
+    icon: GraduationCap,
+  },
   {
     type: "work",
-    title: "Senior Full-Stack Developer",
-    company: "Tech Innovations Inc.",
+    title: "MERN Stack Web Developer (Freelance)",
+    company: "Self-Employed / Client Projects",
     period: "2022 - Present",
     description:
-      "Leading development of scalable web applications using React, Next.js, and Node.js. Mentoring junior developers and architecting cloud solutions.",
+      "Delivering responsive, user-friendly, and scalable web solutions using React.js, Next.js, Node.js, Redux, and MongoDB. Focused on client satisfaction and building impactful digital experiences.",
     icon: Briefcase,
-  },
-  {
-    type: "work",
-    title: "Full-Stack Developer",
-    company: "Digital Solutions Co.",
-    period: "2020 - 2022",
-    description:
-      "Developed and maintained multiple client projects, focusing on performance optimization and user experience improvements.",
-    icon: Briefcase,
-  },
-  {
-    type: "education",
-    title: "Master of Computer Science",
-    company: "Stanford University",
-    period: "2018 - 2020",
-    description: "Specialized in Software Engineering and Human-Computer Interaction. Graduated with honors.",
-    icon: GraduationCap,
-  },
-  {
-    type: "work",
-    title: "Frontend Developer",
-    company: "StartupXYZ",
-    period: "2019 - 2020",
-    description:
-      "Built responsive web applications and collaborated with design teams to create intuitive user interfaces.",
-    icon: Briefcase,
-  },
-  {
-    type: "education",
-    title: "Bachelor of Computer Science",
-    company: "UC Berkeley",
-    period: "2014 - 2018",
-    description: "Foundation in computer science fundamentals, algorithms, and software development principles.",
-    icon: GraduationCap,
   },
 ]
 

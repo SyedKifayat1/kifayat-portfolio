@@ -8,7 +8,6 @@ const overallSkills = [
   { category: "UI/UX Design", level: 78 },
   { category: "Database Management", level: 80 },
   { category: "DevOps & Deployment", level: 72 },
-  { category: "Mobile Development", level: 65 },
 ]
 
 export function SkillsProgress() {

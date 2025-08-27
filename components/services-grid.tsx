@@ -11,7 +11,7 @@ const services = [
     description:
       "Custom portfolio websites that showcase your work beautifully. Modern designs with responsive layouts and interactive elements.",
     features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Custom Animations"],
-    price: "Starting at $1,500",
+    price: "Starting at $100",
   },
   {
     icon: Code,
@@ -19,7 +19,7 @@ const services = [
     description:
       "Complete web applications from frontend to backend. Scalable architecture with modern frameworks and databases.",
     features: ["React/Next.js", "Database Integration", "API Development", "User Authentication"],
-    price: "Starting at $3,000",
+    price: "Starting at $250",
   },
   {
     icon: Search,
@@ -27,7 +27,7 @@ const services = [
     description:
       "Improve your website's search engine rankings with technical SEO, content optimization, and performance enhancements.",
     features: ["Technical SEO", "Performance Optimization", "Content Strategy", "Analytics Setup"],
-    price: "Starting at $800",
+    price: "Starting at $120",
   },
   {
     icon: Wrench,
@@ -35,7 +35,7 @@ const services = [
     description:
       "Keep your website running smoothly with regular updates, security patches, and performance monitoring.",
     features: ["Regular Updates", "Security Monitoring", "Performance Optimization", "24/7 Support"],
-    price: "Starting at $200/month",
+    price: "Starting at $180/month",
   },
   {
     icon: Smartphone,
@@ -43,7 +43,7 @@ const services = [
     description:
       "Ensure your website looks and works perfectly on all devices with responsive design and mobile-first approach.",
     features: ["Responsive Design", "Touch Optimization", "Fast Mobile Loading", "App-like Experience"],
-    price: "Starting at $1,000",
+    price: "Starting at $150",
   },
   {
     icon: Database,
@@ -51,7 +51,7 @@ const services = [
     description:
       "Design and implement robust database solutions for your applications with optimal performance and security.",
     features: ["Database Design", "Migration Services", "Performance Tuning", "Backup Solutions"],
-    price: "Starting at $1,200",
+    price: "Starting at $140",
   },
 ]
 
