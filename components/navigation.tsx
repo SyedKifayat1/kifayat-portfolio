@@ -98,9 +98,12 @@ export function Navigation() {
         </div>
       </div>
 
+      
+
+
       {/* Mobile Fullscreen Navigation */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-8">
+        <div className="fixed inset-0 h-screen w-screen z-[100] bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-8">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -123,6 +126,8 @@ export function Navigation() {
           </Button>
         </div>
       )}
+
+
     </nav>
   )
 }
