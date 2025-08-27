@@ -20,10 +20,15 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio - Modern 3D Interactive Experience",
+  title: "Kifayat's Portfolio - Modern 3D Interactive Experience",
   description:
-    "A modern, 3D-inspired personal portfolio showcasing skills, projects, and services with advanced animations.",
-  generator: "v0.app",
+    "An interactive 3D-inspired personal portfolio highlighting my skills, projects, and services with smooth animations and a modern design.",
+  generator: "Syed Kifayat",
+  icons: {
+    icon: "/SyedKifayat.png", // fallback
+    shortcut: "/SyedKifayat.png",
+    apple: "/SyedKifayat.png", // for iOS devices
+  },
 }
 
 export default function RootLayout({
