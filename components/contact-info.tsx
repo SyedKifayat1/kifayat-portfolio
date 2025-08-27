@@ -26,7 +26,7 @@ export function ContactInfo() {
             </div>
             <div>
               <h3 className="font-medium text-foreground">Email</h3>
-              <p className="text-muted-foreground">hello@portfolio.dev</p>
+              <p className="text-muted-foreground">syedkifayatdev@gmail.com</p>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export function ContactInfo() {
             </div>
             <div>
               <h3 className="font-medium text-foreground">Phone</h3>
-              <p className="text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-muted-foreground">+92 (311) 812-0088</p>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ export function ContactInfo() {
             </div>
             <div>
               <h3 className="font-medium text-foreground">Location</h3>
-              <p className="text-muted-foreground">San Francisco, CA</p>
+              <p className="text-muted-foreground">Lahore, PK</p>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export function ContactInfo() {
         {/* WhatsApp CTA */}
         <div className="mb-8">
           <Button asChild className="w-full glow-effect group bg-green-600 hover:bg-green-700">
-            <Link href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/923118120088" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-4 w-4" />
               Chat on WhatsApp
             </Link>
@@ -66,19 +66,19 @@ export function ContactInfo() {
           <h3 className="font-serif font-semibold text-lg text-foreground mb-4">Follow Me</h3>
           <div className="flex gap-4">
             <Link
-              href="#"
+              href="https://github.com/SyedKifayat1"
               className="flex items-center justify-center w-12 h-12 bg-card/50 backdrop-blur-sm border border-border rounded-xl glow-effect hover:scale-110 hover:border-primary transition-all duration-300"
             >
               <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/syed-kifayat/"
               className="flex items-center justify-center w-12 h-12 bg-card/50 backdrop-blur-sm border border-border rounded-xl glow-effect hover:scale-110 hover:border-primary transition-all duration-300"
             >
               <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
             </Link>
             <Link
-              href="#"
+              href="https://x.com/kifayat80027"
               className="flex items-center justify-center w-12 h-12 bg-card/50 backdrop-blur-sm border border-border rounded-xl glow-effect hover:scale-110 hover:border-primary transition-all duration-300"
             >
               <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />

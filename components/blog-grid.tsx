@@ -149,16 +149,6 @@ export function BlogGrid() {
                   )}
                 </div>
 
-                {/* <Button asChild variant="ghost" className="w-full justify-between group/btn p-0 h-auto">
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="flex items-center justify-between w-full p-3 hover:bg-muted/50 rounded-lg transition-colors"
-                  >
-                    <span className="font-medium">Read More</span>
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                  </Link>
-                </Button> */}
-
                 <Button
                   asChild
                   variant="ghost"

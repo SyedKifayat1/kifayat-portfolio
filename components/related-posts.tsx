@@ -9,7 +9,7 @@ const relatedPosts = [
   {
     title: "TypeScript Best Practices for Large-Scale Applications",
     summary: "Learn essential TypeScript patterns and practices for enterprise applications.",
-    image: "/blog-typescript-best-practices.png",
+    image: "/blog-typescript-best-practices.jpeg",
     date: "2024-01-10",
     readTime: "12 min read",
     slug: "typescript-best-practices-large-scale-applications",
@@ -17,7 +17,7 @@ const relatedPosts = [
   {
     title: "Optimizing React Performance: A Complete Guide",
     summary: "Discover advanced techniques for optimizing React applications.",
-    image: "/blog-react-performance.png",
+    image: "/blog-react-performance.jpeg",
     date: "2023-12-28",
     readTime: "15 min read",
     slug: "optimizing-react-performance-complete-guide",
@@ -25,7 +25,7 @@ const relatedPosts = [
   {
     title: "The Future of Web Development: Trends for 2024",
     summary: "Explore emerging trends and technologies shaping web development.",
-    image: "/blog-web-dev-trends-2024.png",
+    image: "/blog-web-dev-trends-2025.jpeg",
     date: "2023-12-20",
     readTime: "10 min read",
     slug: "future-of-web-development-trends-2024",

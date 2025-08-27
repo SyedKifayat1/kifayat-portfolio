@@ -13,16 +13,16 @@ export function Footer() {
               Showcasing projects, skills, and services with clean UI, responsive layouts, and seamless user experiences.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
+              <Link href="https://github.com/SyedKifayat1" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
                 <Github className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
+              <Link href="https://www.linkedin.com/in/syed-kifayat/" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
+              <Link href="https://x.com/kifayat80027" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
+              <Link href="mailto:syedkifayatdev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors glow-effect">
                 <Mail className="h-5 w-5" />
               </Link>
             </div>

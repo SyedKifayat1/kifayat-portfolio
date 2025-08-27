@@ -14,7 +14,7 @@ export function AuthorBox() {
             <div className="relative">
               <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/20">
                 <Image
-                  src="/professional-headshot.png"
+                  src="/SyedKifayat.png"
                   alt="Author"
                   width={80}
                   height={80}
@@ -26,9 +26,7 @@ export function AuthorBox() {
             <div className="flex-1">
               <h3 className="font-serif font-bold text-xl text-foreground mb-2">About the Author</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I'm a passionate full-stack developer with over 5 years of experience building modern web applications.
-                I love sharing knowledge about React, Next.js, and the latest web technologies through articles and
-                tutorials.
+                I’m a Computer Engineering undergraduate at Information Technology University, specializing in MERN stack web development with a focus on building responsive, scalable, and user-friendly applications using clean code and modern UI. Skilled in React.js, Next.js, Node.js, Redux, and JavaScript, I combine technical expertise with design principles to craft engaging digital experiences, while also leveraging Shadcn UI, Bootstrap, and CSS for sleek and modern interfaces. My approach emphasizes performance, responsiveness, and seamless user experience, ensuring every project I deliver is both functional and impactful. Beyond coding, I’m passionate about continuous learning, exploring new technologies, and contributing to projects that create long-term value.
               </p>
 
               <div className="flex items-center gap-3">
