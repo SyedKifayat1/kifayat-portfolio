@@ -119,18 +119,18 @@ function Hero3D() {
           </div>
         </div>
 
-        <h1 className="font-serif font-bold text-4xl sm:text-6xl lg:text-7xl text-foreground mb-6 leading-tight transform hover:scale-105 transition-transform duration-300">
-          <span className="inline-block transform hover:rotate-2 transition-transform duration-300">Kifayat</span>{" "}
+        <h1 className="font-serif font-bold text-xl sm:text-3xl lg:text-5xl text-foreground mb-6 leading-tight transform hover:scale-105 transition-transform duration-300">
+          <span className="inline-block transform hover:rotate-2 transition-transform duration-300">I Build High-Converting Websites</span>{" "}
           <span className="text-primary inline-block transform hover:-rotate-1 transition-transform duration-300 relative">
-            Web Developer
+            That Help Businesses
             <div className="absolute inset-0 bg-primary/10 blur-2xl rounded-full scale-150 animate-pulse"></div>
           </span>
           <br />
-          <span className="inline-block transform hover:rotate-1 transition-transform duration-300">Portfolio</span>
+          <span className="inline-block transform hover:rotate-1 transition-transform duration-300">Get More Customers</span>
         </h1>
 
         <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed transform hover:scale-105 transition-transform duration-300">
-          Crafting modern and responsive websites with React.js, animations, and interactive experiences.
+          Modern, fast, and fully responsive websites built with React.js — optimized for leads, sales, and business growth.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -139,8 +139,8 @@ function Hero3D() {
             size="lg"
             className="glow-effect group transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
           >
-            <Link href="/projects">
-              <span className="relative z-10">View Projects</span>
+            <Link href="/contact">
+              <span className="relative z-10">Get a Free Website Proposal</span>
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 relative z-10" />
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </Link>
@@ -152,8 +152,8 @@ function Hero3D() {
             size="lg"
             className="glow-effect bg-transparent transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group"
           >
-            <Link href="/contact">
-              <span className="relative z-10">Hire Me</span>
+            <Link href="/projects">
+              <span className="relative z-10">View My Work</span>
               <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             </Link>
           </Button>
